@@ -6,11 +6,13 @@ import Nav from "../Navbar/Nav"
 const Root = () => {
   return (
     <div>
-      <Nav></Nav>
-      <Outlet></Outlet>
+      <div className="max-w-6xl mx-auto">
+        <Nav></Nav>
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </div>
-  )
+  );
 }
 
 export default Root
