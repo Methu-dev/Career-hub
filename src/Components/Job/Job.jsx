@@ -1,5 +1,6 @@
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
+import { Link } from "react-router";
 
 
 const Job = ({ job }) => {
@@ -11,6 +12,7 @@ const Job = ({ job }) => {
       job_type,
       location,
       salary,
+      id,
     } = job;
   return (
     <div className="card bg-base-100 shadow-sm">
@@ -40,7 +42,11 @@ const Job = ({ job }) => {
           </h2>
         </div>
         <div className="card-actions">
-          <button className="btn bg-[#9478FF] text-white">View Details</button>
+          <Link to={`/job/${id}`}>
+            <button className="btn bg-[#9478FF] text-white">
+              View Details
+            </button>
+          </Link>
         </div>
       </div>
     </div>

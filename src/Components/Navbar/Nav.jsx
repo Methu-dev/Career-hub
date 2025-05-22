@@ -52,7 +52,9 @@ const Nav = () => {
         <ul className="menu menu-horizontal px-1">{Links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white">
+          Star Applying
+        </a>
       </div>
     </div>
   );
