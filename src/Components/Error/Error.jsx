@@ -1,6 +1,8 @@
 import { Link } from "react-router"
 
 
+
+
 const Error = () => {
   return (
     <div>
